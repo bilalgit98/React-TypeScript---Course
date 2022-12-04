@@ -2,19 +2,21 @@ import React from "react";
 import "./App.css";
 
 let name: string = "bilal";
-let age: number;
+let age: number | string;
 let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 
-type Information = {
-  name: string;
-  age: number;
-};
+// type Information = {
+//   name: string;
+//   age?: number;
+// };
 
-let person: Information = {
-  name: "bilal",
-};
+// let person: Information = {
+//   name: "bilal",
+// };
+
+age = "hundred";
 // let name: string;
 // name = 7; // not possible because the type is set to string
 // role: [5, 8]; //not possible because the type is set to number and string
