@@ -7,6 +7,14 @@ let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 
+type Information = {
+  name: string;
+  age: number;
+};
+
+let person: Information = {
+  name: "bilal",
+};
 // let name: string;
 // name = 7; // not possible because the type is set to string
 // role: [5, 8]; //not possible because the type is set to number and string
