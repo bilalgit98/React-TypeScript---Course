@@ -1,33 +1,14 @@
 import React from "react";
 import "./App.css";
+import InputField from "./components/inputField";
 
-let name: string = "bilal";
-let age: number | string;
-let isStudent: boolean;
-let hobbies: string[];
-let role: [number, string];
-
-// type Information = {
-//   name: string;
-//   age?: number;
-// };
-
-// let person: Information = {
-//   name: "bilal",
-// };
-
-age = "hundred";
-// let name: string;
-// name = 7; // not possible because the type is set to string
-// role: [5, 8]; //not possible because the type is set to number and string
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="">
-        <h1> HELLO WORLD</h1>
-      </header>
+      <span className="heading">TASKIFY</span>
+      <InputField />
     </div>
   );
-}
+};
 
 export default App;
